@@ -37,13 +37,15 @@
             align-items: center;
             /* actual animation */
             
-            
-            &:hover {
-                width: auto;
-                height: auto;
-                border-top: 2px solid #fff;
-                border-bottom: 2px solid #fff;
-                transition: all 0.4s ease;
+            .main-navigation a:before, .main-navigation a:after {
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                height: 2px;
+                background: #FFF;
+                content: "";
+                opacity: 0;
+                transition: all 0.3s;
             }
         }
     
