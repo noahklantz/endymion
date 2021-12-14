@@ -1,0 +1,11 @@
+if any issues, recreate "css" folder, rename as "sass"
+had to change because of issues with loading 
+
+browser-sync start --proxy http://localhost/drupal-8.9.19/ --files "**/*"   
+
+"**/*" command will watch all from root folder 
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.7'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+

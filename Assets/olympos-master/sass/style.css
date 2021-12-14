@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS Document */
+/*!
+Theme Name: Olympos
+Description: Blank Wordpress Theme
+Version: 3.0
+Author: Ivan Dorić
+Author URI: http://www.watch-learn.com/
+Tags: starter theme, light, sass, gulp, livereload
+
+        The CSS, XHTML is released under GPL:
+        http://www.opensource.org/licenses/gpl-license.php
+
+*/
+/* Vendor */
+/* Setup */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =======================================================================
+## ++ Media Queries
+========================================================================== */
+/* 
+    Used for media queries. 
+    Add these mixins in your normal scss flow.
+    
+    Eg.
+    .container{
+        width:1024px;
+        
+        @include tablets{
+            width:90%;
+        }
+    }
+*/
+/* =======================================================================
+## ++ Unit transform
+========================================================================== */
+/*  
+    Used for making containers have width in percentages. 
+    Usage: define elemnt width in px and the width of parent elemnt in px. 
+    eg. .block{width:cp(512px, 1024px)} this will result in .block{width:50%;}   
+*/
+/*  
+    Used for making px values convert to rem values
+    Usage: define font-size in px and it will convert to rems
+    eg. font-size: rem(14px);
+*/
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+html {
+  font-size: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+/* float clearing for IE6 */
+* html .clearfix {
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+* + html .clearfix {
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.clr {
+  clear: both;
+}
+
+/* WP parts */
+/*# sourceMappingURL=style.css.map */

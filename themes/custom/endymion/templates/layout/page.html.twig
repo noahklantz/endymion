@@ -1,0 +1,34 @@
+{% include directory ~ '/partials/header.html.twig' %}
+
+<div class="container">
+  <main role="main">
+  <body>
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      <div class="article-list">
+      {{ page.content }}
+      </div>
+    </div>{# /.layout-content #}
+
+    {% if page.sidebar %}
+      <aside class="layout-sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+
+  
+  </body>
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.7'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+</div>{# /.layout-container #}
