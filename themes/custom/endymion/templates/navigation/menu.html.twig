@@ -24,7 +24,7 @@
   We call a macro which calls itself to render the full tree.
   @see https://twig.symfony.com/doc/1.x/tags/macro.html
 #}
-<div class="sticky">{{ menus.menu_links(items, attributes, 0) }}</div>
+<div>{{ menus.menu_links(items, attributes, 0) }}</div>
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}

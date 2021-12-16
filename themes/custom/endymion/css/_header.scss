@@ -1,3 +1,95 @@
+@import 'media-queries';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation {
+    background: url(../images/hero2.jpg) center;
+    height: 175px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw-1200px) /2); 
+    z-index: 10;
+    position: relative;
+
+    .nav-logo {
+       cursor: pointer;
+       color: #eceaea;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 2rem;
+       margin-left: 24px;
+       @extend %align-center;
+    }
+
+    .nav-bars {
+        opacity: 0;
+
+        @include tablet {
+            color: #eceaea;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    .nav-menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+        font-weight: bold;
+        font-size: 20px;
+        @include tablet {
+            display: none;
+        }
+
+        .nav-links {
+            @extend %align-center;
+            color: #eceaea;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+
+            &:hover {
+                color: limegreen;
+                transition: all 0.3s ease;
+            }
+        }
+
+        #button {
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: limegreen;
+            margin-left: 16px;
+            color: #eceaea;
+
+            &:hover {
+                background: rgb(224, 84, 166);
+                transition: all 0.3s ease 0.2s;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*
 .main-header {
     height: 200px;
     background: url(../images/hero2.jpg) no-repeat center center;
@@ -21,21 +113,21 @@
         border: none;
         
         
-        /* individual top elements */
+        
         a{
             color: #efefef;
             text-transform: uppercase;
             text-align: center;
-            /*
+            
             text-decoration: none;
             padding: 0 10px;
            
-             */
+             
             width: 100%;
             height: 50px;
             display: flex;
             align-items: center;
-            /* actual animation */
+            
             
             &:hover {
                 height: auto;
@@ -84,7 +176,7 @@
                         
                     }
                }  
-            }  */
+            }  
         }
     
         .sub-menu {
@@ -94,98 +186,9 @@
         .menu-item-4:hover .sub-menu{
             display: block;
         }
+
+
     
     }
 }
-
-
-/*
-.main-header {
-    height: 200px;
-    background: url(../images/hero2.jpg) no-repeat center center;
-   
-}
-
-.logo{
-    @include span(4.5);
-    margin-top: 35px;
-    img{
-        max-width: 100%;
-    }
-}
-
-.main-navigation{ 
-    @include span(2);
-    padding: 15px;
-    display: inline-block;
-    width: fit-content;
-    background: white;
-    border: 2px solid grey;
-    top: 0px;
-
-    
-    
-    a{
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 0 10px;
-        color: #2BA6CB;
-        text-align: center;
-        
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-
-    li{
-        position: relative;
-        list-style: none;
-        
-    }
-  
-
-    ul ul{
-        position: absolute;
-        float: none;
-        width: 120px;
-        
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-
-        li {
-            float: none;
-            position: relative;
-            background: white;
-            margin-left: auto;
-            margin-right: auto;
-        
-
-            a {
-                color: #2BA6CB;
-                padding: 5px;
-                border-bottom: 1px solid #efefef;
-                text-decoration: none;
-            
-                &:hover {
-                    background: #2BA6CB;
-                    color: white;
-                    text-decoration: none;        
-                }
-           }  
-        } 
-    }
-
-    .sub-menu {
-        display: none;
-    }
-
-    .menu-item-4:hover .sub-menu{
-        display: block;
-    }
-
-}
-
 */
