@@ -12,15 +12,17 @@
     align-items: center;
 }
 
+
 .main-navigation {
+
     background: url(../images/hero2.jpg) center;
     height: 175px;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc((100vw-1200px) /2); 
-    z-index: 10;
-    position: relative;
     text-transform: uppercase;
+    position: relative;
+    top: 0;
 
     .nav-logo {
        
@@ -39,7 +41,8 @@
             position: absolute;
             top: 22px;
             right: 20px;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            cursor: pointer;
         }
     }
 
@@ -47,12 +50,15 @@
         @extend %align-center;
         list-style: none;
         text-align: center;
+        margin-top: 15px;
         margin-right: 24px;
         font-weight: bold;
         font-size: 20px;
+
         @include tablet {
             display: none;
         }
+        
 
         .nav-links a{
             @extend %align-center;
@@ -117,6 +123,8 @@
             }
         }
     }
+
+
 }
 
 
