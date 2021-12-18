@@ -6,23 +6,24 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="./css/styles/styles.css">
 </head>
 <header class="main-header" role="banner">
-
-  
-    {# {{ page.header }} #}
     
     <nav class="main-navigation">
-      <a href='/' class="nav-logo">SASS</a>
-      
+      {# <a class="nav-logo" ><img src="themes/custom/endymion/images/logo.svg"/> </a> #}
+       {{ page.header }}
       <div class="nav-bars">
         <i class="fas fa-bars"></i>
       </div>  
         <div class="nav-menu">
+        {#
           <a href="/" class="nav-links">Home</a>
           <a href="/" class="nav-links">Products</a>
-          <a href="/" class="nav-links">Services</a>
+          <a href="/" class="nav-links">Services</a> #}
+           <div class="nav-links">
+            {{page.main_navigation}}
+           </div>
           <a href="/" class="nav-links" id="button">Sign Up</a>
-        {# {{page.main_navigation}} #}
-       </a>
+        
+       
        </div>
       </div>
     </nav> 

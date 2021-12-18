@@ -20,14 +20,13 @@
     padding: 0.5rem calc((100vw-1200px) /2); 
     z-index: 10;
     position: relative;
+    text-transform: uppercase;
 
     .nav-logo {
+       
+       max-width: 100px;
        cursor: pointer;
-       color: #eceaea;
-       text-decoration: none;
-       font-weight: bold;
-       font-size: 2rem;
-       margin-left: 24px;
+       margin: 30px 30px;
        @extend %align-center;
     }
 
@@ -55,8 +54,9 @@
             display: none;
         }
 
-        .nav-links {
+        .nav-links a{
             @extend %align-center;
+            list-style: none;
             color: #eceaea;
             justify-content: center;
             text-decoration: none;
@@ -66,6 +66,32 @@
                 color: limegreen;
                 transition: all 0.3s ease;
             }
+
+        
+        }
+        ul ul {
+            @extend %align-center;
+            position: absolute;
+            float: left;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 0.95rem;
+            margin-top: auto;
+            text-align: center;
+            padding: 4px;
+            
+        }
+
+        .sub-menu {
+            display: none;
+        }
+    
+        .menu-item-4:hover .sub-menu{
+            @extend %align-center;
+            position: absolute;
+            display: block;
+            text-align: center;
+            justify-content: space-between;
         }
 
         #button {
@@ -76,6 +102,7 @@
             background: limegreen;
             margin-left: 16px;
             color: #eceaea;
+            
 
             &:hover {
                 background: rgb(224, 84, 166);
