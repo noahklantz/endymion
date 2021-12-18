@@ -51,8 +51,21 @@ body{
     font-size: 20px;
 }
 
+.button {
+    background-color: limegreen;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: limegreen;
+    margin-left: 16px;
+    color: #eceaea;
+            
 
-
+    &:hover {
+       background: rgb(224, 84, 166);
+        transition: all 0.3s ease 0.2s;
+    }
+}
 
 
 /* =======================================================================

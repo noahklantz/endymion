@@ -8432,6 +8432,22 @@ body {
   font-size: 20px;
 }
 
+.button {
+  background-color: limegreen;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: limegreen;
+  margin-left: 16px;
+  color: #eceaea;
+}
+
+.button:hover {
+  background: #e054a6;
+  -webkit-transition: all 0.3s ease 0.2s;
+  transition: all 0.3s ease 0.2s;
+}
+
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */
@@ -8547,14 +8563,22 @@ body {
 .main-navigation .nav-menu ul ul {
   position: absolute;
   float: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  font-size: 0.95rem;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 7px;
+  border: black;
+}
+
+.main-navigation .nav-menu ul ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
-  font-size: 0.95rem;
-  margin-top: auto;
-  text-align: center;
-  padding: 4px;
+  margin-bottom: 5px;
 }
 
 .main-navigation .nav-menu .sub-menu {

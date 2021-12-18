@@ -73,12 +73,19 @@
             @extend %align-center;
             position: absolute;
             float: left;
-            justify-content: space-between;
+            justify-content: space-around;
             list-style: none;
             font-size: 0.95rem;
-            margin-top: auto;
+            margin: auto;
+            margin-bottom: 5px;
             text-align: center;
-            padding: 4px;
+            padding: 7px;
+            border: black;
+             
+            li {
+                justify-content: space-between;
+                margin-bottom: 5px;
+            }
             
         }
 
