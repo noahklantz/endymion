@@ -67,7 +67,10 @@ public static function create(\Symfony\Component\DependencyInjection\ContainerIn
 
         $query = $this->connection->select('zoo_animal','a')
             ->fields('a')
-            ->orderBy('name','ASC');
+            ->orderBy('name','ASC')
+            ->extend('Drupal\Core\Database\Query\PagerSelectExtender')
+            ->limit(3);
+            
         if($habitat != 'all'){
             $query->condition('a.habitat_id',$habitat);
         } else {
@@ -97,9 +100,14 @@ public static function create(\Symfony\Component\DependencyInjection\ContainerIn
         //query for the animals and return an array
 
         return [
-            '#theme' => 'table',
-            '#rows' => $rows,
-            '#header' => $header,
+            'data' => [
+                '#theme' => 'table',
+                '#rows' => $rows,
+                '#header' => $header,
+            ],
+            'pager' => [
+                '#type' => 'pager',
+            ],
         ];
     }
 

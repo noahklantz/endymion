@@ -8447,6 +8447,27 @@ body {
   transition: all 0.3s ease 0.2s;
 }
 
+.pager {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pager .pager__item {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
 /* =======================================================================
 ## ++ Cleafix
 ========================================================================== */

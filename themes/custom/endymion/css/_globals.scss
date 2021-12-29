@@ -64,8 +64,19 @@ body{
         transition: all 0.3s ease 0.2s;
     }
 }
-
-
+.pager {  
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    .pager__item {
+        list-style-type: none;
+        display: inline-flex;
+        position: relative;
+    }
+}
 
 /* =======================================================================
 ## ++ Cleafix
