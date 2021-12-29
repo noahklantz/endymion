@@ -1,0 +1,6 @@
+name: Entity Query Examples
+type: module
+description: An example of entity queries in Drupal 8
+package: Training
+version: '8.x-1.0'
+core: '8.x'

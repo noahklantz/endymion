@@ -805,4 +805,16 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
+$databases['personnel']['default'] = array (
+  'database' => 'personnel',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+
 $settings['config_sync_directory'] = 'sites/default/files/config_n-6Odp2nlhJVlL0ll-3Ph4Bqsq2idclEp5bziWOBw0V7pMnd_cQqALrp87Q2ivdgjPNU3YbSXQ/sync';
